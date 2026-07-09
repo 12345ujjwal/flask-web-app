@@ -4,11 +4,11 @@ FROM python:3.9-slim
 
 # Working directory
 
-WORKDIR .
+WORKDIR /app
 
 # Copy src code to container
 
-COPY . .
+COPY . /app
 
 # Run the build commands
 
@@ -20,5 +20,5 @@ EXPOSE 80
 
 # serve the app / run the app (keep it running)
 
-CMD ["python","run.py"]
+CMD ["python","/app/run.py"]
 
