@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Copy src code to container
 
-COPY . /app
+COPY . .
 
 # Run the build commands
 
@@ -20,5 +20,5 @@ EXPOSE 80
 
 # serve the app / run the app (keep it running)
 
-CMD ["python","/app/run.py"]
+CMD ["python","run.py"]
 
