@@ -4,7 +4,7 @@ FROM python:3.9-slim
 
 # Working directory
 
-WORKDIR /app
+WORKDIR .
 
 # Copy src code to container
 
